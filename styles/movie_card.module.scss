@@ -1,10 +1,9 @@
-@media (max-width: 480px) {
-    .movie {
-        font-size: 16px;
+.movie_card {
+    @media screen and (max-width: 425px) {
         border: 1px solid #7c7c7c;
         margin-bottom: 15px;
         border-radius: 10px;
-        img  {
+        img {
             border-radius: 10px 10px 0px 0px;
         }
         .details {
@@ -17,7 +16,6 @@
                 .liked_btn {
                     background-color: #0073ff;
                     color: white;
-
                 }
                 button {
                     padding: 10px 20px;
@@ -35,4 +33,7 @@
             }
         }
     }
+    // @media screen and (min-width: 425px) and (max-width: 576px) {
+    //     display: none;  
+    // }
 }

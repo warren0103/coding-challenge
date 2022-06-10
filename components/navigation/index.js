@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "../../styles/navigation.module.scss";
 const Header = ()=> {
     return (
-        <header className={styles.navigation}> 
+        <header className={styles.header}> 
             <nav>
                 <Link href="/">
                     <h1> HOME</h1>

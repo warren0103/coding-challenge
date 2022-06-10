@@ -1,17 +1,25 @@
-.navigation {
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 64px;
     background-color: #000;
     color: white;
-    padding: 0px 20px;
     z-index: 1000;
     nav {
         display: flex;
         justify-content: space-between;
         height: 100%;
         align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+        }
     }
+    @media screen and (min-width: 481px) {
+        
+    }
+
 }

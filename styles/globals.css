@@ -4,6 +4,7 @@
 	margin: 0px;
 	list-style: none;
 	text-decoration: none;
+	font-size: 16px;
 }
 a {
 	color: inherit;
@@ -12,13 +13,24 @@ a {
 }
 #__next {
 	padding-top: 60px;
+	min-height: 100vh;
 }
 img {
 	width: 100%;
 }
+main {
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px 0px;
+}
+/* @media screen and (max-width: 576px) {
+	main {
+		width: 90%;
+	}
+} */
 
-@media (max-width: 480px) {
-	#__next {
-		margin: 0px 20px;
+@media screen and (min-width: 1200px) {
+	main {
+		max-width: 1200px;
 	}
 }

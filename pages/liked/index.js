@@ -6,14 +6,16 @@ import MovieList from "../../components/movie-list";
 const Page = ()=> {
 
     let data = useGetMovies(process.env.NEXT_PUBLIC_API);
+    
     let {loading, error, movies} = data;
     
+    if(loading) return <Loading />
+    if(error) return <Error />
     return (
-        <div className="content-wrapper">
-            { loading && <Loading /> }
-            { error && <Error /> }
-            { movies && <MovieList movies={movies} list_type="Liked Movies" /> }
-        </div>
+        <main>
+            <h1> My Likes </h1> 
+            <MovieList movies={movies} />
+        </main>
     )
 }
 
