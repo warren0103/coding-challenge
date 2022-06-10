@@ -12,20 +12,15 @@ const Provider = ({children}) => {
     const likeMovie = (movie_id)=> {
         // before adding movie to liked, check if the movie already exists the database
         if(db[movie_id]) {
-            console.log('remove movie from database')
             delete db[movie_id]
             setDb(db)
         } else {
-            console.log('adding movie to database');
             db[movie_id] = true;
             setDb(db)
         }
     };
 
-    const value = {
-        db,
-        likeMovie
-    };
+    const value = { db, likeMovie };
 
     return (
         <context.Provider value={value}>

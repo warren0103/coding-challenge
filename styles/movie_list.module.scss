@@ -2,10 +2,6 @@
     display: -ms-grid;
     display: grid;
     grid-gap: 10px;
-    /* SMALL SCREENS */
-    @media screen and (max-width: 425px) {
-
-    }
 
     /* MEDIUM SCREENS */
     @media screen and (min-width: 436px) and (max-width: 575px) {
