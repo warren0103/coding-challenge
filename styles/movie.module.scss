@@ -1,0 +1,38 @@
+@media (max-width: 480px) {
+    .movie {
+        font-size: 16px;
+        border: 1px solid #7c7c7c;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        img  {
+            border-radius: 10px 10px 0px 0px;
+        }
+        .details {
+            position: relative;
+            padding: 20px;
+            .like_btn_container {
+                position: absolute;
+                top: -25px;
+                right: 24px;
+                .liked_btn {
+                    background-color: #0073ff;
+                    color: white;
+
+                }
+                button {
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    border: none;
+                    border-radius: 20px;
+                    width: 100px;
+                    font-weight: 500;
+                    box-shadow: 0px 1px 4px #7c7c7c;
+                }
+            }
+            .title {
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+}
