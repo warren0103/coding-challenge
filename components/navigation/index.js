@@ -11,7 +11,7 @@ const Header = ()=> {
                 <ul>
                     <li>
                         <Link href="/liked">
-                            <a> My Likes</a>
+                            <a> my likes</a>
                         </Link>
                     </li>
                 </ul>
